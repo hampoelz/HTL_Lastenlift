@@ -13,13 +13,13 @@
 % ========================================
 
 % title of the generated history timeline
-\newcommand\HistoryTimelineTitle{Commit History}
+\newcommand\HistoryTimelineTitle{Versionsverlauf}
 
 % maximum commits to show in the history timeline
 \newcommand\HistoryTimelineLimit{5}
 
 % title of the generated history table
-\newcommand\HistoryTableTitle{Full Commit History}
+\newcommand\HistoryTableTitle{Kompletter Versionsverlauf}
 
 % maximum commits to show in the history table use '*' for no limit
 \newcommand\HistoryTableLimit{*}
@@ -94,10 +94,10 @@
 
 % \PassOptionsToPackage{outputdir=\auxDir}{minted}\usepackage{minted} % code highlighting
 
-% \PassOptionsToPackage{smartEllipses}{markdown}                      % enable LaTeX ellipses
-% \PassOptionsToPackage{hashEnumerators}{markdown}                    % enable additional list declarations
-% \PassOptionsToPackage{pipeTables,tableCaptions}{markdown}           % enable tables
+\PassOptionsToPackage{smartEllipses}{markdown}                      % enable LaTeX ellipses
+\PassOptionsToPackage{hashEnumerators}{markdown}                    % enable additional list declarations
+\PassOptionsToPackage{pipeTables,tableCaptions}{markdown}           % enable tables
 % \PassOptionsToPackage{fencedCode}{markdown}                         % enable inline code-blocks
 % \PassOptionsToPackage{inlineFootnotes}{markdown}                    % enable inline footnotes
-% \PassOptionsToPackage{hybrid}{markdown}                             % enable LaTeX in markdown
-% \usepackage{markdown}\def\markdownOptionOutputDir{\auxDir}          % markdown language support
+\PassOptionsToPackage{hybrid}{markdown}                             % enable LaTeX in markdown
+\usepackage{markdown}\def\markdownOptionOutputDir{\auxDir}          % markdown language support

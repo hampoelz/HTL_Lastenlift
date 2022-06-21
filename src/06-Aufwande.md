@@ -1,0 +1,24 @@
+# Aufwände
+
+## Zeitliche Meilensteine in der Projektabwicklung
+
+\begin{HistoryTimeline}[Meileinsteine]
+    \HistoryTlEntry{2022-05-05}{1}{Rene Hampölz}{Zuordnungstabelle Sensoren/Aktoren}
+    \HistoryTlEntry{2022-05-12}{2}{Rene Hampölz}{Auswahl der Sensorik}
+    \HistoryTlEntry{2022-05-23}{3}{Rene Hampölz}{Anschlussschema für die SPS}
+    \HistoryTlEntry{2022-06-09}{4}{Rene Hampölz}{Programmierung mit Automation Studio}
+    \HistoryTlEntry{2022-06-23}{5}{Rene Hampölz}{Visualisierung}
+\end{HistoryTimeline}
+
+## Finanzielle Aufwendungen
+
+In der Tabelle unterhalb, werden die Kosten für die Endschalter und für den Lichtvorhang aufgelistet.
+
+\begin{center}
+
+| Anzahl | Name          | Bezugsquelle          | Kosten  |
+|--------|---------------|-----------------------|---------|
+| 2x     | AT4/11-3/I/AR | EATON                 | 311,50€ |
+| 1x     | DeTec2 Core   | Telco Sensors Austria | 435,24€ |
+
+\end{center}
