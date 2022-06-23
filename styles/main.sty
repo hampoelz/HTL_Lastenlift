@@ -21,8 +21,8 @@
 % title of the generated history table
 \newcommand\HistoryTableTitle{Kompletter Versionsverlauf}
 
-% maximum commits to show in the history table use '*' for no limit
-\newcommand\HistoryTableLimit{*}
+% maximum commits to show in the history table use '0' for no limit
+\newcommand\HistoryTableLimit{0}
 
 % commits ignored in generated history (seperate with space)
 % example config:
@@ -37,7 +37,7 @@
 \usepackage[T1]{fontenc}                % accented characters
 \usepackage{lmodern}                    % text & mathematics fonts / additional characters
 
-\newcommand\auxDir{./tmp}               % auxiliary directory (must be identical to the definition in the .latexmkrc file)
+\newcommand\auxDir{./out}               % auxiliary directory (must be identical to the definition in the .latexmkrc file)
 
 % ========================================
 %        Enable or disable packages       
