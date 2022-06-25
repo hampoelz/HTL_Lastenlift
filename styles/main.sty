@@ -6,58 +6,62 @@
 % https://github.com/hampoelz/LaTeX-Template.
 %
 
-\typeout{Rene Hampölz, 2022}
-
-% ========================================
-%              Configurations             
-% ========================================
-
-% title of the generated history timeline
-\newcommand\HistoryTimelineTitle{Versionsverlauf}
-
-% maximum commits to show in the history timeline
-\newcommand\HistoryTimelineLimit{5}
-
-% title of the generated history table
-\newcommand\HistoryTableTitle{Kompletter Versionsverlauf}
-
-% maximum commits to show in the history table use '0' for no limit
-\newcommand\HistoryTableLimit{0}
-
-% commits ignored in generated history (seperate with space)
-% example config:
-%   \newcommand\HistoryIgnoreCommits{32d0a55 b64004a d431f06}
-\newcommand\HistoryIgnoreCommits{}
-
 % ========================================
 %              Do not change!             
+%                                         
+%     You can change configurations and   
+%      packages in the sections below     
 % ========================================
 
-\usepackage[utf8]{inputenc}             % UTF8 encode
-\usepackage[T1]{fontenc}                % accented characters
+\typeout{Rene Hampölz, 2022}
+
+\usepackage{luaotfload}                 % Font loader
+\usepackage[EU2]{fontenc}               % Font encoding
+\usepackage[extendedchars]{grffile}     % non-ascii characters in paths
 \usepackage{lmodern}                    % text & mathematics fonts / additional characters
 
 \newcommand\auxDir{./out}               % auxiliary directory (must be identical to the definition in the .latexmkrc file)
 
 % ========================================
+%              Configurations             
+% ========================================
+
+% \usepackage[english]{babel}             % english language
+\usepackage[german]{babel}              % german language
+
+% title of the generated history timeline
+\protected\def\HistoryTimelineTitle{Versionsverlauf}
+
+% maximum commits to show in the history timeline
+\def\HistoryTimelineLimit{5}
+
+% title of the generated history table
+\protected\def\HistoryTableTitle{Kompletter Versionsverlauf}
+
+% maximum commits to show in the history table use '0' for no limit
+\def\HistoryTableLimit{0}
+
+% commits ignored in generated history (seperate with space)
+% example config:
+%   \def\HistoryIgnoreCommits{32d0a55 b64004a d431f06}
+\def\HistoryIgnoreCommits{}
+
+% ========================================
 %        Enable or disable packages       
 % ========================================
 
-\usepackage{booktabs}                   % enhance table quality
-\usepackage{styles/history}             % auto-generate commit history 
+\usepackage{styles/history}             % auto-generate commit history - included packages: xparse, graphicx, calc, booktabs, ltablex, environ, ifplatform
 
-\usepackage[german]{babel}              % german language
-% \usepackage[english]{babel}             % english language
 \usepackage{amsmath}                    % mathematical symbols
 \usepackage{amssymb}                    % mathematical symbols
 \usepackage{amsfonts}                   % mathematical symbols
 
 \usepackage{hyperref}                   % produce hypertext links
 \usepackage{parskip}                    % customize paragraph indent
-% \usepackage{geometry}                   % modify document dimensions
+\usepackage{geometry}                   % modify document dimensions
 % \usepackage{multicol}                   % improve two-column mode
 % \usepackage{multirow}                   % add two-column mode
-% \usepackage{enumitem}                   % change style of orderd lists
+
 % \usepackage[                            % ┝ easier and more flexible bibliography management
 %  backend=biber,                         % |
 %  style=iso-numeric,                     % | or iso-authoryear
@@ -66,10 +70,7 @@
 % \addbibresource{references.bib}         % |
 
 % \usepackage{wrapfig}                    % create figures with floating text around
-% \usepackage{soul}                       % more text style options
-
 % \usepackage{subcaption}                 % subfigures and subtables
-% \captionsetup{compatibility=false}
 
 \usepackage{tocvsec2}                   % table of contents control
 % -------- cheatsheet -------
