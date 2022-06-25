@@ -1,6 +1,6 @@
 {
     "git.pullTags": false,
-    "cSpell.language": "en",
+    "cSpell.language": "de",
     "latex-workshop.latex.outDir": "%DIR%/out",
     "gitlens.showWelcomeOnInstall": false,
     "gitlens.showWhatsNewAfterUpgrades": false
