@@ -2,7 +2,7 @@
 
 ## Ausgangslage
 
-Es soll ein Lastenlift realisiert werden, damit man Lasten von einem Stock in den darüber liegenden Stock befördern kann. Es sind keine ähnlichen Projekte vorhanden, auf die man zurückgreifen könnte.
+Es soll ein Lastenlift realisiert werden, damit Lasten von einem Stock in den darüber liegenden Stock befördern werden können. Es sind keine ähnlichen Projekte vorhanden, auf die zurückgegriffen werden könnten.
 
 ## Partner und Betreuungspersonen
 

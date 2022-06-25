@@ -2,7 +2,7 @@
 
 ## Zeitliche Meilensteine in der Projektabwicklung
 
-\begin{HistoryTimeline}[Meileinsteine]
+\begin{HistoryTimeline}[Meilensteine]
     \HistoryTlEntry{2022-05-05}{1}{Rene Hampölz}{Zuordnungstabelle Sensoren/Aktoren}
     \HistoryTlEntry{2022-05-12}{2}{Rene Hampölz}{Auswahl der Sensorik}
     \HistoryTlEntry{2022-05-23}{3}{Rene Hampölz}{Anschlussschema für die SPS}
