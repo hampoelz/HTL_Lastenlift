@@ -6,23 +6,63 @@
 
 % \geometry{top=20mm,bottom=20mm}
 
-\title{}
-\confidential{\textbf{}}
+\title{Lastenlift}
+\confidential{\textbf{Pflichtenheft}}
 
-\author{}
-\company{}
-\date{}
+\author{Rene Hampölz}
+\company{HTBLA Weiz}
+\date{2022}
 
 \begin{document}
 \maketitle
 
+\begin{table}[h]
+    \textbf{Projektteam}
+    \centering
+    \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}lll}
+        \toprule 
+        Name & Themenstellung & Telefon & E-Mail \\
+        \midrule
+        Rene Hampölz & Lastenlift & +43 xxx & rene@hampoelz.net \\
+        \bottomrule
+    \end{tabular*}
+\end{table}
+
+\begin{table}[h]
+    \textbf{Betreuer/innen}
+    \centering
+    \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}lll}
+        \toprule 
+        Rolle & Name & Telefon & E-Mail \\
+        \midrule
+        Hauptverantwortlich & Tanzer Thomas & +43 xxx & email adresse \\
+        Hauptverantwortlich & Heimo Blattner & +43 xxx & email adresse \\
+        \bottomrule
+    \end{tabular*}
+\end{table}
+
 \IncludeHistoryTimeline
 
-\tableofcontents
-% \listoffigures
 \clearpage
 
+\tableofcontents
+\listoffigures
+
 \settocdepth{subsection}
+
+\clearpage
+\markdownInput{src/01-Allgemeines.md}
+\markdownInput{src/02-Informationen.md}
+
+\clearpage
+\markdownInput{src/03-Zielkriterien.md}
+\markdownInput{src/04-ErweiterteKriterien.md}
+\markdownInput{src/05-Gerateaufbau.md}
+
+\clearpage
+\markdownInput{src/06-Aufwande.md}
+
+\clearpage
 
 % \clearpage
 % 

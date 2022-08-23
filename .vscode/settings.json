@@ -2,7 +2,7 @@
     "task.allowAutomaticTasks": "auto",
     "git.pullTags": false,
     "git.mergeEditor": true,
-    "cSpell.language": "en",
+    "cSpell.language": "de",
     "latex-workshop.latex.outDir": "%DIR%/out",
     "latex-workshop.latex.recipes": [
         {
