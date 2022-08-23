@@ -1,0 +1,104 @@
+%
+% Copyright (c) 2022 Rene Hampölz
+%
+% Use of this source code is governed by an MIT-style
+% license that can be found in the LICENSE file under
+% https://github.com/hampoelz/LaTeX-Template.
+%
+
+% ========================================
+%              Do not change!             
+%                                         
+%     You can change configurations and   
+%      packages in the sections below     
+% ========================================
+
+\typeout{Rene Hampölz, 2022}
+
+\usepackage{luaotfload}                 % Font loader
+\usepackage[EU2]{fontenc}               % Font encoding
+\usepackage[extendedchars]{grffile}     % non-ascii characters in paths
+\usepackage{lmodern}                    % text & mathematics fonts / additional characters
+
+\newcommand\auxDir{./out}               % auxiliary directory (must be identical to the definition in the .latexmkrc file)
+
+% ========================================
+%              Configurations             
+% ========================================
+
+\usepackage[english]{babel}             % english language
+% \usepackage[german]{babel}              % german language
+
+% title of the generated history timeline
+\protected\def\HistoryTimelineTitle{Commit History}
+
+% maximum commits to show in the history timeline
+\def\HistoryTimelineLimit{5}
+
+% title of the generated history table
+\protected\def\HistoryTableTitle{Full Commit History}
+
+% maximum commits to show in the history table use '0' for no limit
+\def\HistoryTableLimit{0}
+
+% commits ignored in generated history (seperate with space)
+% example config:
+%   \def\HistoryIgnoreCommits{32d0a55 b64004a d431f06}
+\def\HistoryIgnoreCommits{}
+
+% ========================================
+%        Enable or disable packages       
+% ========================================
+
+\usepackage{styles/history}             % auto-generate commit history - included packages: xparse, graphicx, calc, booktabs, ltablex, environ, ifplatform
+
+\usepackage{amsmath}                    % mathematical symbols
+\usepackage{amssymb}                    % mathematical symbols
+\usepackage{amsfonts}                   % mathematical symbols
+
+\usepackage{hyperref}                   % produce hypertext links
+\usepackage{parskip}                    % customize paragraph indent
+\usepackage{geometry}                   % modify document dimensions
+% \usepackage{multicol}                   % improve two-column mode
+% \usepackage{multirow}                   % add two-column mode
+
+% \usepackage[                            % ┝ easier and more flexible bibliography management
+%  backend=biber,                         % |
+%  style=iso-numeric,                     % | or iso-authoryear
+% ]{biblatex}                             % |
+% \usepackage{csquotes}                   % | quoted texts are typeset according to the rules of the document language
+% \addbibresource{references.bib}         % |
+
+% \usepackage{wrapfig}                    % create figures with floating text around
+% \usepackage{subcaption}                 % subfigures and subtables
+
+\usepackage{tocvsec2}                   % table of contents control
+% -------- cheatsheet -------
+% -1 = \part
+%  0 = \chapter
+%  1 = \section
+%  2 = \subsection
+%  3 = \subsubsection
+%  4 = \paragraph
+%  5 = \subparagraph
+% ---------------------------
+
+% \usepackage[most]{tcolorbox}            % coloured and framed text boxes with a heading line
+% \newtcolorbox{restOfPage}[1][]{         % ┝ create a new box with its height set to the rest of the available vertical space of the current page
+%  enhanced,                              % |
+%  frame hidden,                          % |
+%  colback=white,                         % |
+%  height fill,                           % |
+%  space to=\restSpace,                   % |
+%  #1                                     % |
+% }                                       % |
+
+% \PassOptionsToPackage{outputdir=\auxDir}{minted}\usepackage{minted} % code highlighting
+
+% \PassOptionsToPackage{smartEllipses}{markdown}                      % enable LaTeX ellipses
+% \PassOptionsToPackage{hashEnumerators}{markdown}                    % enable additional list declarations
+% \PassOptionsToPackage{pipeTables,tableCaptions}{markdown}           % enable tables
+% \PassOptionsToPackage{fencedCode}{markdown}                         % enable inline code-blocks
+% \PassOptionsToPackage{inlineFootnotes}{markdown}                    % enable inline footnotes
+% \PassOptionsToPackage{hybrid}{markdown}                             % enable LaTeX in markdown
+% \usepackage{markdown}\def\markdownOptionOutputDir{\auxDir}          % markdown language support
